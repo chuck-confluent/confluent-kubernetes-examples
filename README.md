@@ -21,3 +21,10 @@ The following prerequisites are assumed for each scenario workflow:
   ```
   git clone git@github.com:confluentinc/confluent-kubernetes-examples.git
   ```
+
+To experiment locally, you can run 
+  ```
+  ./setup.sh && \       # install helm, k3d, and kubectl
+  ./start-k8s.sh        # start kubernetes
+  ```
+Look at mykube.yml for the k3d configuration (1 API server and 6 worker nodes with labels for rack awareness).
